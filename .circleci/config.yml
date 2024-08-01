@@ -1,6 +1,8 @@
 version: 2.1
 jobs:
   build:
+    context:
+      - khanhbv
     working_directory: ~/src
     docker:
       - image: cimg/base:2022.09
