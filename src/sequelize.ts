@@ -3,16 +3,16 @@ import {config} from './config/config';
 
 
 export const sequelize = new Sequelize({
-  'username': config.username,
-  'password': config.password,
-  'database': config.database,
-  'host': config.host,
-  'dialectOptions': {
-    'ssl': {
-      'require': true, // This will help you. But you will see nwe error
-      'rejectUnauthorized': false // This line will fix new error
+  username: config.username,
+  password: config.password,
+  database: config.database,
+  host: config.host,
+  dialectOptions: {
+    ssl: {
+      require: true, // This will help you. But you will see nwe error
+      rejectUnauthorized: false // This line will fix new error
     }
   },
-  'dialect': config.dialect,
-  'storage': ':memory:',
+  dialect: config.dialect,
+  storage: ':memory:',
 });
